@@ -33,4 +33,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f springboot-example-container
       - name: Run docker container
-        run: docker run -d -p 3000:3000 --name springboot-example-container integrationninjas/springboot-example
+        run: docker run -d -p 8080:8080 --name springboot-example-container integrationninjas/springboot-example
