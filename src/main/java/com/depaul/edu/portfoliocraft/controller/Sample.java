@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
+
 @RestController
 public class Sample {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Sample.class, args);
-    }
+    //public static void main(String[] args)
+    // {
+       // SpringApplication.run(Sample.class, args);
+   // }
 
     @GetMapping("/hello")
     public String sayHello(@RequestParam(value = "myName", defaultValue = "World") String name) {
