@@ -23,9 +23,3 @@ jobs:
         run: docker build -t pavithra6120/backend_docker .
       - name: Publish image to docker hub
         run: docker push pavithra6120/backend_docker:latest
-<<<<<<< HEAD
-        
-        
-
-=======
->>>>>>> a85053092e0884a085947553a7299108017cff68
