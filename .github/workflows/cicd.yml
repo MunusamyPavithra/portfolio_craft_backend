@@ -35,7 +35,7 @@ jobs:
       - name: Check if Docker is installed
         run: docker --version
       - name: Pull Image from docker hub
-        run: docker pull pavithra6120/backend_docker:latest
+        run: sudo docker pull pavithra6120/backend_docker:latest
       - name: Delete old container
         run: docker rm -f backend_docker-container
       - name: Run docker container
