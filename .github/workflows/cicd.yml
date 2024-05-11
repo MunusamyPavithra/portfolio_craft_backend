@@ -26,6 +26,7 @@ jobs:
         run: docker push pavithra6120/backend_docker:latest
   deploy:
     needs: build
+    if: github.ref == 'refs/heads/master'
     runs-on: [aws-ec2]
     steps:
       - name: Install Docker
