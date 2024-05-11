@@ -37,6 +37,6 @@ jobs:
       - name: Pull Image from docker hub
         run: sudo docker pull pavithra6120/backend_docker:latest
       - name: Delete old container
-        run: docker rm -f backend_docker-container
+        run: sudo docker rm -f backend_docker-container
       - name: Run docker container
         run: docker run -d -p 8080:8080 --name backend_docker-container pavithra6120/backend_docker
