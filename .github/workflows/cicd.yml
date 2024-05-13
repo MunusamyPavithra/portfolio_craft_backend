@@ -32,8 +32,8 @@ jobs:
 
   deploy:
     needs: build
+    runs-on: aws-ec2
     if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
     steps:
       - name: Pull Image from Docker Hub
         run: docker pull pavithra6120/backend_docker:latest
