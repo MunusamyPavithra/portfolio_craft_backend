@@ -35,14 +35,6 @@ jobs:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
-      - name: Install Docker
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io
-
-      - name: Check if Docker is installed
-        run: docker --version
-
       - name: Pull Image from Docker Hub
         run: docker pull pavithra6120/backend_docker:latest
 
